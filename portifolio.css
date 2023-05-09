@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+  background-color: aliceblue;
+  margin: 2%;
+  padding: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+
+#titulo {
+ color: #0c0c0c;
+  text-decoration: none;
+  font-size: 26px;
+  margin: 0;
+  overflow: hidden;
+  border-right: .11em solid rgba(255, 166, 0, 0.514);
+  white-space: nowrap;
+  animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 10%
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  font-size: large;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    color: #f1c40f;
+  }
+}
+
+.nav-list li a:hover {
+  color: #f1c40f;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#sobre p{
+  margin-top: 14%;
+  font-size: medium;
+  font-weight:600;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section p{
+  margin-top: 6%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li a{
+
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer {
+animation: float 5s infinite;
+color: #131212;
+padding: 10px;
+text-align: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#icon{
+  width: 20%;
+  border-radius: 50%;
+  border: 4px solid rgb(176, 196, 222);
+  box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+  transition: transform 0.5s ease;
+}
+
+#icon:hover {
+  transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+*{
+  scroll-behavior: smooth;
+  padding: auto;
+  margin-left:2px;
+  margin-right:2px;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+#icon{
+  margin-left: 140px;
+  width: 30%;
+  border-radius: 50%;
+  border: 4px solid rgb(176, 196, 222);
+  box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+  transition: transform 0.5s ease;
+}
+
+#icon:hover {
+  transform: rotate(360deg);
+}
+
+
+
+ #titulo{ 
+  text-align: center;
+  position: absolute;
+  color: #0c0c0c;
+  font-size: 22px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(70, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width:14%
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+  .nav-list{
+    margin-left: 14%;
+    position:absolute;
+    gap: 10%;
+  }
+  
+  .nav-list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .nav-list li  a {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+#sobre{
+float: right;
+margin-bottom: 60%;
+}
+
+
+#sobre h2{
+  margin-top: 10%;
+  text-align: center;
+}
+
+
+#habilidades{
+text-align: center;
+float: right;
+margin-bottom: 60%;
+margin-left: 22%;
+}
+
+
+#habilidades h2{
+text-align: center;
+
+}
+
+#habilidades button{
+margin-top: 16%;
+text-align: center;
+box-shadow: #131212;
+
+}
+
+footer{
+padding: 36%;
+}
+
+
+}
